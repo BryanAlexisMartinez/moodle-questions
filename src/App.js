@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+//Importar componentes
+import NavBar from './components/Navbar';
+
+import FormularioEnsayo from './components/FormularioEnsayo';
+import Index from './components/Index';
+
+//import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Router>
+          <NavBar/>            
+            <Routes>
+              <Route path='/' exact element = {<Index/>}></Route>
+              <Route path='/formularioEnsayo' element = {<FormularioEnsayo/>}></Route>
+             
+            </Routes>
+
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    width: 100%; /* Hace que el footer ocupe el 100% del ancho */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos adicionales para hacer que el footer sea pegajoso en la parte inferior de la página */
+html, body {
+    height: 100%;
+}
+
+.content {
+    min-height: calc(100% - 40px); /* 40px es la altura del footer */
+}
