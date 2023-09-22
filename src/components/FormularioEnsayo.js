@@ -526,16 +526,16 @@ function FormularioEnsayo() {
                 <form onSubmit={handleSubmit}>
                     <h1>Formulario para agregar pregunta tipo ensayo</h1>
 
-                    <div class="row g-3 align-items-center" >
-                        <div class="col-md-3">
-                            <label for="inputCategoria" class="col-form-label" >Categoría</label>
+                    <div className="row g-3 align-items-center" >
+                        <div className="col-md-3">
+                            <label for="inputCategoria" className="col-form-label" >Categoría</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_categoria">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_categoria_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <select class="inputCategoria" name="inputCategoria">
+                        <div className="col-md-8">
+                            <select className="inputCategoria" name="inputCategoria">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -545,76 +545,76 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-3">
-                            <label for="inputNombre" class="col-form-label">Nombre de la pregunta</label>
+                    <div className="row g-3 align-items-center">
+                        <div className="col-md-3">
+                            <label for="inputNombre" className="col-form-label">Nombre de la pregunta</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_nombre">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_nombre_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputNombre" placeholder="Mínimo 5 caracteres"
+                        <div className="col-md-8">
+                            <input type="text" className="form-control" id="inputNombre" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-3">
-                            <label for="inputTexto" class="col-form-label">Texto de la pregunta</label>
+                    <div className="row g-3 align-items-center">
+                        <div className="col-md-3">
+                            <label for="inputTexto" className="col-form-label">Texto de la pregunta</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_texto">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_texto_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputTexto" placeholder="Mínimo 5 caracteres"
+                        <div className="col-md-8">
+                            <input type="text" className="form-control" id="inputTexto" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-3">
-                            <label for="inputPuntuacion" class="col-form-label">Puntuacion</label>
+                    <div className="row g-3 align-items-center">
+                        <div className="col-md-3">
+                            <label for="inputPuntuacion" className="col-form-label">Puntuacion</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_puntuacion">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_puntuacion_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputPuntuacion" placeholder="Mínimo 5 caracteres"
+                        <div className="col-md-8">
+                            <input type="text" className="form-control" id="inputPuntuacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-3">
-                            <label for="inputRetroalimentacion" class="col-form-label">Retroalimentación general</label>
+                    <div className="row g-3 align-items-center">
+                        <div className="col-md-3">
+                            <label for="inputRetroalimentacion" className="col-form-label">Retroalimentación general</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_retroalimentacion">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_retroalimentacion_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputRetroalimentacion" placeholder="Mínimo 5 caracteres"
+                        <div className="col-md-8">
+                            <input type="text" className="form-control" id="inputRetroalimentacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div class="row g-3 align-items-center" >
-                        <div class="col-md-3">
-                            <label for="inputFormato" class="col-form-label" >Formato de respuesta</label>
+                    <div className="row g-3 align-items-center" >
+                        <div className="col-md-3">
+                            <label for="inputFormato" className="col-form-label" >Formato de respuesta</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_formato">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_formato_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <select class="inputFormato" name="inputFormato">
+                        <div className="col-md-8">
+                            <select className="inputFormato" name="inputFormato">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">Editor HTML</option>
                                 <option value="2">Editor HTML con selector de archivo</option>
@@ -624,16 +624,16 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div class="row g-3 align-items-center" >
-                        <div class="col-md-3">
-                            <label for="inputTamano" class="col-form-label" >Tamaño de la caja de entrada</label>
+                    <div className="row g-3 align-items-center" >
+                        <div className="col-md-3">
+                            <label for="inputTamano" className="col-form-label" >Tamaño de la caja de entrada</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_tamano">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_tamano_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <select class="inputTamano" name="inputTamano">
+                        <div className="col-md-8">
+                            <select className="inputTamano" name="inputTamano">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">5 líneas</option>
                                 <option value="2">10 líneas</option>
@@ -648,16 +648,16 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div class="row g-3 align-items-center" >
-                        <div class="col-md-3">
-                            <label for="inputPermitir" class="col-form-label" >Permitir archivos adjuntos</label>
+                    <div className="row g-3 align-items-center" >
+                        <div className="col-md-3">
+                            <label for="inputPermitir" className="col-form-label" >Permitir archivos adjuntos</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_permitir">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_permitir_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <select class="inputPermitir" name="inputPermitir">
+                        <div className="col-md-8">
+                            <select className="inputPermitir" name="inputPermitir">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">Si</option>
                                 <option value="2">No</option>
@@ -666,30 +666,30 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div class="row g-3 align-items-center">
-                        <div class="col-md-3">
-                            <label for="inputInformacion" class="col-form-label">Información para los alumnos</label>
+                    <div className="row g-3 align-items-center">
+                        <div className="col-md-3">
+                            <label for="inputInformacion" className="col-form-label">Información para los alumnos</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_informacion">
-                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_informacion_txt"></span>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputInformacion" placeholder="Mínimo 5 caracteres"
+                        <div className="col-md-8">
+                            <input type="text" className="form-control" id="inputInformacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div class="align-items-center">
-                        <button type="button" class="btn btn-success text-nowrap" id="btnEnviar">
+                    <div className="align-items-center">
+                        <button type="button" className="btn btn-success text-nowrap" id="btnEnviar">
                             <span>
-                                <i class="bi bi-send icon__send fw-bold"></i>
+                                <i className="bi bi-send icon__send fw-bold"></i>
                             </span>
-                            <span class="icon__send fw-bold">Guardar</span>
+                            <span className="icon__send fw-bold">Guardar</span>
                         </button>
 
-                        <button type="button" class="btn btn-danger"><Link to="/" class="nav-link active">Cancelar</Link></button>
+                        <button type="button" className="btn btn-danger"><Link to="/" class="nav-link active">Cancelar</Link></button>
                     </div>
                 </form>
             );
