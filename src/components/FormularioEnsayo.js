@@ -584,37 +584,37 @@ function FormularioEnsayo() {
                             </div>
                         </div>
                         <div className="col-md-8">
-                            <input type="text" className="form-control" id="inputPuntuacion" placeholder="Mínimo 5 caracteres"
+                            <input type="text" class="form-control" id="inputPuntuacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div className="row g-3 align-items-center">
-                        <div className="col-md-3">
-                            <label for="inputRetroalimentacion" className="col-form-label">Retroalimentación general</label>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <label for="inputRetroalimentacion" class="col-form-label">Retroalimentación general</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_retroalimentacion">
-                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_retroalimentacion_txt"></span>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <input type="text" className="form-control" id="inputRetroalimentacion" placeholder="Mínimo 5 caracteres"
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputRetroalimentacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div className="row g-3 align-items-center" >
-                        <div className="col-md-3">
-                            <label for="inputFormato" className="col-form-label" >Formato de respuesta</label>
+                    <div class="row g-3 align-items-center" >
+                        <div class="col-md-3">
+                            <label for="inputFormato" class="col-form-label" >Formato de respuesta</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_formato">
-                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_formato_txt"></span>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <select className="inputFormato" name="inputFormato">
+                        <div class="col-md-8">
+                            <select class="inputFormato" name="inputFormato">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">Editor HTML</option>
                                 <option value="2">Editor HTML con selector de archivo</option>
@@ -624,16 +624,16 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div className="row g-3 align-items-center" >
-                        <div className="col-md-3">
-                            <label for="inputTamano" className="col-form-label" >Tamaño de la caja de entrada</label>
+                    <div class="row g-3 align-items-center" >
+                        <div class="col-md-3">
+                            <label for="inputTamano" class="col-form-label" >Tamaño de la caja de entrada</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_tamano">
-                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_tamano_txt"></span>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <select className="inputTamano" name="inputTamano">
+                        <div class="col-md-8">
+                            <select class="inputTamano" name="inputTamano">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">5 líneas</option>
                                 <option value="2">10 líneas</option>
@@ -648,16 +648,16 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div className="row g-3 align-items-center" >
-                        <div className="col-md-3">
-                            <label for="inputPermitir" className="col-form-label" >Permitir archivos adjuntos</label>
+                    <div class="row g-3 align-items-center" >
+                        <div class="col-md-3">
+                            <label for="inputPermitir" class="col-form-label" >Permitir archivos adjuntos</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_permitir">
-                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_permitir_txt"></span>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <select className="inputPermitir" name="inputPermitir">
+                        <div class="col-md-8">
+                            <select class="inputPermitir" name="inputPermitir">
                                 <option selected>Abre el menú para ver las opciones</option>
                                 <option value="1">Si</option>
                                 <option value="2">No</option>
@@ -666,30 +666,30 @@ function FormularioEnsayo() {
                     </div>
 
 
-                    <div className="row g-3 align-items-center">
-                        <div className="col-md-3">
-                            <label for="inputInformacion" className="col-form-label">Información para los alumnos</label>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <label for="inputInformacion" class="col-form-label">Información para los alumnos</label>
                             <div style={{ display: 'none', color: 'rgb(186, 3, 3)' }} role="alert" id="alert_informacion">
-                                <span><i className="bi bi-exclamation-triangle-fill icon__warning"></i></span>
+                                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
                                 <span id="alert_informacion_txt"></span>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <input type="text" className="form-control" id="inputInformacion" placeholder="Mínimo 5 caracteres"
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputInformacion" placeholder="Mínimo 5 caracteres"
                                 required minLength="5" maxLength="50" />
                         </div>
                     </div>
 
 
-                    <div className="align-items-center">
-                        <button type="button" className="btn btn-success text-nowrap" id="btnEnviar">
+                    <div class="align-items-center">
+                        <button type="button" class="btn btn-success text-nowrap" id="btnEnviar">
                             <span>
-                                <i className="bi bi-send icon__send fw-bold"></i>
+                                <i class="bi bi-send icon__send fw-bold"></i>
                             </span>
-                            <span className="icon__send fw-bold">Guardar</span>
+                            <span class="icon__send fw-bold">Guardar</span>
                         </button>
 
-                        <button type="button" className="btn btn-danger"><Link to="/" class="nav-link active">Cancelar</Link></button>
+                        <button type="button" class="btn btn-danger"><Link to="/" class="nav-link active">Cancelar</Link></button>
                     </div>
                 </form>
             );
