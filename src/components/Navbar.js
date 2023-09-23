@@ -10,11 +10,17 @@ class NavBar extends Component{
                 <a href="/">Preguntas</a>
             </div>
             <ul class="nav-links">
+
                 <li>
                 <a href="/">Inicio</a>
                 </li>
+
                 <li>
-                <a href="/formularioEnsayo">Formulario Ensayo</a>
+                <a href="/listadoPreguntas">Listado preguntas</a>
+                </li>
+
+                <li>
+                <a href="/formularioEnsayo2">Formulario ensayo</a>
                 </li>
             </ul>
         </nav>
