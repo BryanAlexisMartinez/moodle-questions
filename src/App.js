@@ -10,6 +10,8 @@ import FormularioEnsayo from "./components/FormularioEnsayo";
 import FormularioEnsayo2 from "./components/FormularioEnsayo2";
 import ListadoPreguntas from './components/ListadoPreguntas';
 import Index from "./components/Index"
+import VentanaRespuesta from "./components/VentanaRespuesta";
+import EditorHtml from './components/EditorHtml';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path='/listadoPreguntas' element={<ListadoPreguntas />}></Route>
           <Route path='/formularioEnsayo' element={<FormularioEnsayo />}></Route>
           <Route path='/formularioEnsayo2' element={<FormularioEnsayo2 />}></Route>
+          <Route path="/respuesta/:preguntaId" element={<VentanaRespuesta />} />
 
         </Routes>
       </Router>
