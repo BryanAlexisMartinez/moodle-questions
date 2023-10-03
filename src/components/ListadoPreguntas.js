@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, Route, Routes, useParams, useNavigate } from "react-router-dom";
 import VentanaRespuesta from "./VentanaRespuesta";
+import RespuestaAlumno from "./RespuestaAlumnos";
 
 function ListadoPreguntas() {
     const [preguntas, setPreguntas] = useState([]);
@@ -41,7 +42,7 @@ function ListadoPreguntas() {
                 <table>
                     <thead>
                         <tr>
-                        <th>ID</th>
+                            <th>ID</th>
                             <th>Nombre</th>
                             <th>Texto</th>
                             <th>Puntuación</th>
@@ -56,7 +57,7 @@ function ListadoPreguntas() {
                     <tbody>
                         {preguntas.map((pregunta) => (
                             <tr key={pregunta.id}>
-                                 <td>{pregunta.id}</td>
+                                <td>{pregunta.id}</td>
                                 <td>{pregunta.nombre}</td>
                                 <td>{pregunta.texto}</td>
                                 <td>{pregunta.puntuacion}</td>
@@ -66,7 +67,7 @@ function ListadoPreguntas() {
                                 <td>{pregunta.permitir}</td>
                                 <td>{pregunta.informacion}</td>
                                 <td>
-                                <button onClick={() => navigate(`/respuesta/${pregunta.id}`)}>Responder</button>
+                                    <button onClick={() => navigate(`/respuesta/${pregunta.id}`)}>Responder</button>
                                 </td>
                             </tr>
                         ))}
@@ -85,6 +86,7 @@ function ListadoPreguntas() {
                             <th>Tamaño</th>
                             <th>Permitir archivos adjuntos</th>
                             <th>Información para los alumnos</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -99,6 +101,10 @@ function ListadoPreguntas() {
                                 <td>{pregunta.tamano}</td>
                                 <td>{pregunta.permitir}</td>
                                 <td>{pregunta.informacion}</td>
+                                <td>
+                                    <button onClick={() => navigate(`/respuestaAlumno/${pregunta.id}`)}>Ver Respuestas</button>
+
+                                </td>
                             </tr>
                         ))}
                     </tbody>
@@ -108,7 +114,9 @@ function ListadoPreguntas() {
             {/* Rutas de React Router */}
             <Routes>
                 <Route path="/respuesta/:preguntaId" element={<VentanaRespuesta />} />
+                <Route path="/respuestaAlumno/:preguntaId" element={<RespuestaAlumno />} />
             </Routes>
+
         </div>
     );
 }
