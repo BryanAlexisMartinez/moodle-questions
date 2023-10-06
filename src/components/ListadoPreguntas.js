@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, Route, Routes, useParams, useNavigate } from "react-router-dom";
 import VentanaRespuesta from "./VentanaRespuesta";
-import RespuestaAlumno from "./RespuestaAlumnos";
+import RespuestaAlumnos from "./RespuestaAlumnos";
 
 function ListadoPreguntas() {
     const [preguntas, setPreguntas] = useState([]);
@@ -86,7 +86,6 @@ function ListadoPreguntas() {
                             <th>Tamaño</th>
                             <th>Permitir archivos adjuntos</th>
                             <th>Información para los alumnos</th>
-                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -101,20 +100,18 @@ function ListadoPreguntas() {
                                 <td>{pregunta.tamano}</td>
                                 <td>{pregunta.permitir}</td>
                                 <td>{pregunta.informacion}</td>
-                                <td>
-                                    <button onClick={() => navigate(`/respuestaAlumno/${pregunta.id}`)}>Ver Respuestas</button>
-
-                                </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
             )}
+            <button onClick={() => navigate(`/respuestaAlumnos/`)}>Ver Respuestas</button>
+
 
             {/* Rutas de React Router */}
             <Routes>
                 <Route path="/respuesta/:preguntaId" element={<VentanaRespuesta />} />
-                <Route path="/respuestaAlumno/:preguntaId" element={<RespuestaAlumno />} />
+                <Route path="/respuestaAlumnos/" element={<RespuestaAlumnos />} />
             </Routes>
 
         </div>

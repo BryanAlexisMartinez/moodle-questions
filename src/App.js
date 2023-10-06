@@ -11,7 +11,7 @@ import FormularioEnsayo2 from "./components/FormularioEnsayo2";
 import ListadoPreguntas from './components/ListadoPreguntas';
 import Index from "./components/Index"
 import VentanaRespuesta from "./components/VentanaRespuesta";
-import RespuestaAlumno from './components/RespuestaAlumnos';
+import RespuestaAlumnos from './components/RespuestaAlumnos';
 import EditorHtml from './components/EditorHtml';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path='/formularioEnsayo' element={<FormularioEnsayo />}></Route>
           <Route path='/formularioEnsayo2' element={<FormularioEnsayo2 />}></Route>
           <Route path="/respuesta/:preguntaId" element={<VentanaRespuesta />} />
-          <Route path="/respuestaAlumno/:preguntaNombre" element={<RespuestaAlumno />} />
+          <Route path='/respuestaAlumnos' element={<RespuestaAlumnos />} />
 
 
         </Routes>
